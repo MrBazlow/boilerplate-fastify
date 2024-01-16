@@ -1,0 +1,48 @@
+{
+  "name": "boilerplate-fastify",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env ./dist/index.js",
+    "dev": "tsx watch --env-file=.env ./src/index.ts",
+    "check": "tsc --watch --noEmit --project ./tsconfig.json",
+    "build": "tsup-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.8.0",
+    "@fastify/cookie": "^9.2.0",
+    "@fastify/env": "^4.3.0",
+    "@fastify/etag": "^5.1.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/multipart": "^8.1.0",
+    "@fastify/sensible": "^5.5.0",
+    "@fastify/static": "^6.12.0",
+    "@fastify/type-provider-typebox": "^4.0.0",
+    "@fastify/view": "^8.2.0",
+    "@fastify/vite": "^5.0.6",
+    "@sinclair/typebox": "^0.32.4",
+    "fastify": "^4.25.2",
+    "fastify-plugin": "^4.5.1",
+    "handlebars": "^4.7.8",
+    "pino": "^8.17.2",
+    "sharp": "^0.33.2",
+    "type-fest": "^4.9.0"
+  },
+  "devDependencies": {
+    "@fastify/swagger": "^8.13.0",
+    "@fastify/swagger-ui": "^2.0.1",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/node": "^20.10.6",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "pino-pretty": "^10.3.1",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
