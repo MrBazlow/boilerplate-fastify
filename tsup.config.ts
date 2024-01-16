@@ -10,6 +10,7 @@ export default defineConfig({
   keepNames: true,
   loader: {
     ".hbs": "copy",
+    ".json": "copy",
   },
   skipNodeModulesBundle: true,
   bundle: false,
